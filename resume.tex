@@ -1,10 +1,9 @@
 %-------------------------
 % Resume in Latex
 % Author : Shekhar Jha
-% Template: https://github.com/arasgungore/arasgungore-CV
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,9pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -41,11 +40,11 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\oddsidemargin}{-0.7in}
+\addtolength{\evensidemargin}{-0.7in}
+\addtolength{\textwidth}{1.4in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{1.4in}
 
 \urlstyle{same}
 
@@ -154,7 +153,7 @@
     
     \resumeEducationHeading
       {BITS-Pilani}{Pilani, Rajasthan, India}
-      {M.E. in Computer Science Engineering;   \textbf{CGPA: 8.33/10.0}}{Sep 2021 \textbf{--} Jun 2023}
+      {M.E. in Computer Science;   \textbf{CGPA: 8.33/10.0}}{Sep 2021 \textbf{--} Jun 2023}
     
     \resumeSubheading
       {AKTU}{Noida, U.P., India}
@@ -206,9 +205,10 @@
       {Qualcomm}{Hyderabad, Telangana, India}
       {Software Engineer}{Jul 2023 \textbf{--} Present}
         \resumeItemListStart
-            \resumeItem{Worked on CLI to get the real time resource allocation stats from DSP. Extended the feature across multiple modes/spaces to get the realtime stats.}
-            \resumeItem{Worked on DSP Feature Request to get the status of resource manager whenever there would be an allocation failure by the resource manager.}
-            \resumeItem{Worked for existing tools to get compatible with the new chip sets.}
+            \resumeItem{Designed and implemented memory architecture tailored exclusively for ML models. Optimized codebase to efficiently manage multiple models concurrently within the allocated memory space, ensuring optimal performance for the active model.}
+            \resumeItem{Enhanced kernel code to autonomously retrieve and store DSP statistics, eliminating the need to query the DSP for real-time information.}
+            \resumeItem{Collaborated on DSP Feature Requests, enhancing functionality to retrieve real-time status from the resource manager in the event of allocation failures.}
+            \resumeItem{Ensured compatibility of existing tools with the latest chipsets, spanning various levels such as test suites, status modules, kernel code, drivers, and thread information.}
         \resumeItemListEnd
         
     \resumeSubheading
@@ -217,19 +217,18 @@
         \resumeItemListStart
             \resumeItem{Collaborated with the development team to enhance a driver and tested the new functionality to ensure the quality of the driver.}
             \resumeItem{Developed and executed test cases for a module working on DSP, utilizing my knowledge of digital signal processing concepts.}
-            \resumeItem{Analyzed the functionality of the DSP module and created test cases to ensure the accuracy of the output.}
-            \resumeItem{Improved the overall quality by identifying and reporting defects in the DSP module and the driver.}
+            \resumeItem{Analyzed the functionality of the DSP module and created test cases to ensure the accuracy of the output. Improved the overall quality by identifying and reporting defects in the DSP module and the driver.}
         \resumeItemListEnd
 
     \resumeSubheading
       {Sopra Steria}{Noida, U.P., India}
-      {Software Engineer}{Aug 2019 \textbf{--} Oct 2021}
+      {Software Engineer}{Aug 2019 \textbf{--} Oct 2023}
         \resumeItemListStart
-            \resumeItem{Worked for NHS-SBS to provide BI services.}
-            \resumeItem{Have used Informatica as an ETL Tool and DAC as a Job Scheduler.}
-            \resumeItem{Worked on 20+ changes and developed solution and released them to the production.}
-            \resumeItem{Have experience on OBIEE 11G and 12C on OAS.}
-            \resumeItem{Managed and optimized Informatica jobs to reduce the overall overnight ETL runtime by 3hrs.}
+            \resumeItem{Designed and implemented Informatica mappings for ETL to get the data from EBS database, and storing it into data warehouse}
+            \resumeItem{Developed OBIEE reports using data stored in the data warehouse, providing insights and daily ETL run statistics.}
+            \resumeItem{Assisted in migration of informatica mappings, OBIEE reports, in the transition from OBIEE to OAS and from Informatica 9.6 to 11.0, ensuring continuity butween the platforms}
+            \resumeItem{Collaborated with customers to address reported issues in both standard and customized reports. Investigated and resolved issues across the entire data pipeline, from OBIEE reports, Informatica mappings, to EBS (Enterprise Business Suite) databases.}
+            \resumeItem{Managed and optimized Informatica jobs to reduce the overall ETL runtime.}
         \resumeItemListEnd
         
     \resumeSubheading
@@ -249,7 +248,7 @@
     \resumeSubHeadingListStart
       
       \resumeProjectHeading
-        {\textbf{High-speed IP-flow analysis} \emph{}}{}
+        {\textbf{High-speed IP-flow analysis (Research Practice Project)} \emph{}}{}
           \resumeItemListStart
             \resumeItem{High-speed IP-flow analysis, due to the high volume and velocity of the internet traffic, poses significant challenges for the storage performance of the analysis infrastructure.}
             \resumeItem{Required a system which would be ingest data a very fast rate. Multiple different set of experiments has been done with different database architectures and pipelines.}
@@ -258,7 +257,7 @@
           \resumeItemListEnd
       
       \resumeProjectHeading
-        {\textbf{Empirical Analysis of P2P Protocols} $|$ \emph{\href{https://github.com/skjha98/P2P-Protocols-Comparision}{\color{blue}GitHub}}}{}
+        {\textbf{Empirical Analysis of P2P Protocols (Coursework Project)} $|$ \emph{\href{https://github.com/skjha98/P2P-Protocols-Comparision}{\color{blue}GitHub}}}{}
           \resumeItemListStart
             \resumeItem{P2P protocols were compared based upon the hop-counts, lookup success rate, total lookups, etc.}
             \resumeItem{Various protocols like Chord, Kademlia, Pastry were used for comparison.}
@@ -271,14 +270,14 @@
 
 %----------- AWARDS & ACHIEVEMENTS -----------
 
-\section{Awards \& Achievements}
-  \vspace{2pt}
-  \resumeSubHeadingListStart
-    \small{\item{
-        \textbf{Sopra Steria:}{ Sopra Steria Pinnacle Award 2020.} \\ \vspace{3pt}
-        \textbf{Sopra Steria:}{ Sopra Steria Customer's Delight Award 2020.} \\ \vspace{3pt}
-    }}
-  \resumeSubHeadingListEnd
+% \section{Awards \& Achievements}
+%   \vspace{2pt}
+%   \resumeSubHeadingListStart
+%     \small{\item{
+%         \textbf{Sopra Steria:}{ Sopra Steria Pinnacle Award 2020.} \\ \vspace{3pt}
+%         \textbf{Sopra Steria:}{ Sopra Steria Customer's Delight Award 2020.} \\ \vspace{3pt}
+%     }}
+%   \resumeSubHeadingListEnd
 
 
 
@@ -289,9 +288,9 @@
   \vspace{2pt}
   \resumeSubHeadingListStart
     \small{\item{
-        \textbf{Programming:}{ C, C++, Python, Oracle SQL} \\
+        \textbf{Programming:}{ C, C++, Python, SQL} \\
         \textbf{Operating System:}{ Windows, Linux, Mac} \\
-        \textbf{Developer Tools}{: VS Code, Vim, Git, GitHub, Perforce, Kernel} \\
+        \textbf{Developer Tools}{: VS Code, Vim, Git, GitHub, Perforce, Trace32} \\
         \textbf{Languages:}{ Hindi (Native), English (Professional)}
     }}
   \resumeSubHeadingListEnd
