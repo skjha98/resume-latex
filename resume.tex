@@ -3,7 +3,7 @@
 % Author : Shekhar Jha
 %------------------------
 
-\documentclass[letterpaper,9pt]{article}
+\documentclass[letterpaper,8pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -24,7 +24,7 @@
 %---------- FONT OPTIONS ----------
 % sans-serif
 % \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
+ \usepackage[sfdefault]{roboto}
 % \usepackage[sfdefault]{noto-sans}
 % \usepackage[default]{sourcesanspro}
 
@@ -87,13 +87,20 @@
 }
 
 
+% \newcommand{\resumeEducationHeading}[4]{
+%   \vspace{-2pt}\item
+%     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+%       \textbf{#1} & #2 \\
+%       \textit{\small#3} & \textit{\small #4} \\
+%     \end{tabular*}\vspace{-5pt}
+% }
+
 \newcommand{\resumeEducationHeading}[4]{
   \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+  \textbf{#1} #2 | #3 \hfill \small #4
+  \vspace{-5pt}
 }
+
 
 
 \newcommand{\resumeProjectHeading}[2]{
@@ -187,37 +194,32 @@
       {Software Engineer}{Jul 2023 \textbf{--} Present}
         \resumeItemListStart
             
-            \resumeItem{Designed and implemented a memory architecture for ML models, optimizing the codebase to concurrently manage multiple models within the allocated memory. Achieved a 35\% improvement in performance for the active model by efficiently partitioning memory pages.}
-            \resumeItem{Contributed to the implementation of a preemption scheme by writing unit tests to catch development bugs early. Optimized core functions, reducing cyclomatic complexity from over 65 to 20, and achieving 99.7\% code coverage through additional test cases.}
-            \resumeItem{Developed and rigorously tested a new device, identifying and resolving critical bugs that improved stability and usability for cross-functional teams.}
-            \resumeItem{Collaborated on Feature Requests to enhance DSP functionality, enabling real-time status retrieval from the resource manager during allocation failures, improving error-handling and system reliability.}
-            \resumeItem{Enhanced kernel code to automatically retrieve and store DSP statistics, eliminating manual queries and reducing system latency. This improvement streamlined data collection for real-time monitoring.}
+            \resumeItem{Designed and implemented a memory management driver for \textbf{QNN} (Qualcomm Neural Network) Framework, optimizing the codebase to concurrently manage multiple models within allocated memory. Achieved a 35\% performance improvement for the active model through efficient memory page partitioning. Utilized \textbf{Trace32} to identify and address unexpected scenarios.}
+            \resumeItem{Contributed to the implementation of a new resource manager for the autonomous preemption scheme. Developed a testing framework to evaluate the autonomous preemption functionality, significantly increasing testing coverage.}
+            \resumeItem{Optimized core functions of the resource manager, reducing cyclomatic complexity from over 65 to 20 to ensure code safety, and achieved 99.7\% code coverage through additional test cases. Used \textbf{Perforce} for code review and version control.}
+            \resumeItem{Participated in device bring-up, validating all team deliverables and resolving critical bugs to enhance device stability and usability for cross-functional teams. Developed \textbf{Python} scripts to automate redundant tasks, such as report generation and validation, improving overall efficiency.}
+            \resumeItem{Collaborated on feature requests to enhance \textbf{DSP} (Digital Signal Processors) functionality, enabling real-time status retrieval from the resource manager during allocation failures, improving error-handling and system reliability. Utilized \textbf{Workfront} for FR tracking.}
+            \resumeItem{Optimized \textbf{kernel} code to automatically retrieve and store DSP statistics, eliminating manual queries and reducing system latency, thereby streamlining data collection for real-time monitoring. Used \textbf{Gerrit} for code review and version control \textbf{Orbit} for CR tracking.}
         \resumeItemListEnd
         
     \resumeSubheading
       {Qualcomm}{Hyderabad, Telangana, India}
       {Software Engineer Intern}{Feb 2023 \textbf{--} Jun 2023}
         \resumeItemListStart
-            \resumeItem{Collaborated with the development team to enhance device drivers, improving functionality and ensuring quality through rigorous testing using Axiom framework.}
-            \resumeItem{Developed and executed test cases for a module working on DSP, utilizing my knowledge of digital signal processing concepts.}
-            \resumeItem{Performed in-depth analysis of DSP module functionality, creating 10+ targeted test cases for each device and DSP to ensure output accuracy. Improved overall quality by identifying and resolving inconsistencies in existing test cases.}
+            \resumeItem{Enhanced driver functionality through collaboration with the development team, leading to a 25\% decrease in performance-related bugs. Ensured high-quality output and system stability through \textbf{Axiom} framework, including final pre-release test cases.}
+            \resumeItem{Performed in-depth analysis of DSP module functionality, creating 10+ targeted Axiom test cases for each device and DSP to ensure output accuracy. Improved overall quality by identifying and resolving inconsistencies in existing test cases.}
+            \resumeItem{Collaborated with cross-functional teams in an \textbf{Agile/Scrum} environment to enhance project delivery and responsiveness to changing requirements.}
+
         \resumeItemListEnd
 
     \resumeSubheading
       {Sopra Steria}{Noida, U.P., India}
       {Software Engineer}{Aug 2019 \textbf{--} Oct 2021}
         \resumeItemListStart
-            \resumeItem{Designed and implemented complex Informatica mappings for ETL processes to extract data from the EBS database and efficiently store it in the data warehouse, handling 10+ GB of data daily.}
-            \resumeItem{Developed OBIEE reports using data from the data warehouse to provide key insights on operational performance and daily ETL run statistics, enabling data-driven decision-making and process optimizations.}
-            \resumeItem{Contributed to the successful migration of Informatica mappings and OBIEE reports during the transition from OBIEE to OAS and from Informatica 9.6 to 11.0, ensuring seamless platform continuity and minimizing downtime.}
+            \resumeItem{Designed and implemented complex \textbf{Informatica} mappings for ETL processes to extract data from the Oracle EBS database and efficiently store it in the data warehouse, managing over 10 GB of data daily. Optimized the existing \textbf{Oracle database}, tables, and \textbf{SQL} queries using techniques such as bitmap indexing and explain plan.}
+            \resumeItem{Developed \textbf{OBIEE} reports using data from the data warehouse to provide key insights on operational performance and daily ETL run statistics, enabling data-driven decision-making and process optimizations.}
+            \resumeItem{Contributed to the successful migration of Informatica mappings and OBIEE reports during the transition from OBIEE to \textbf{OAS} and from Informatica 9.6 to 11.0, ensuring seamless platform continuity and minimizing downtime.}
             \resumeItem{Collaborated closely with customers to address and resolve over 100 issues in both standard and customized reports. Diagnosed and fixed data pipeline issues across OBIEE reports, Informatica mappings, and EBS databases, reducing issue resolution time by 3 hrs.}
-        \resumeItemListEnd
-        
-    \resumeSubheading
-      {Texopanda LLP}{(WFH)Noida, U.P., India}
-      {Android Developer Intern}{Jul 2018 \textbf{--} Aug 2018}
-        \resumeItemListStart
-            \resumeItem{A Social Networking Android application for online computer game players.}
         \resumeItemListEnd
     
   \resumeSubHeadingListEnd
@@ -229,15 +231,16 @@
   \resumeSubHeadingListStart
     
     \resumeEducationHeading
-      {BITS-Pilani}{Pilani, Rajasthan, India}
-      {M.E. in Computer Science;   \textbf{CGPA: 8.33/10.0}}{Sep 2021 \textbf{--} Jun 2023}
+      {BITS-Pilani, Pilani Campus}{Pilani, Rajasthan, India}
+      {M.E. (Computer Science) \textbf{| CGPA: 8.33/10.0}}{Sep 2021 | Jun 2023}
     
-    \resumeSubheading
-      {AKTU}{Noida, U.P., India}
-      {B.Tech. in Computer Science;   \textbf{Percentage: 79.12/100}}{Aug 2015 \textbf{--} Jun 2019}
-    \resumeSubheading
-      {Vanasthali Public School}{Noida, U.P., India}
-      {High School;   \textbf{Percentage: 82.4/100}}{Apr 2014 \textbf{--} Mar 2015}
+    \resumeEducationHeading
+      {AKTU }{Noida, U.P., India}
+      {B.Tech. (Computer Science) \textbf{| Percentage: 79.12\%}}{Aug 2015 | Jun 2019}
+      
+    \resumeEducationHeading
+      {Vanasthali Public School }{Noida, U.P., India}
+      {High School \textbf{| Percentage: 82.4\%}}{Apr 2014 | Mar 2015}
     
   \resumeSubHeadingListEnd
 
@@ -251,17 +254,14 @@
         {\textbf{High-speed IP-flow analysis (Research Practice)} \emph{}}{}
           \resumeItemListStart
             \resumeItem{Designed and implemented a high-speed IP-flow analysis system to address storage performance challenges caused by high-volume, high-velocity internet traffic.}
-            \resumeItem{Engineered a system capable of ingesting data at high rates. Conducted experiments with various database architectures and pipelines, optimizing for storage efficiency and throughput.}
-            \resumeItem{This project was conducted as part of a research initiative sponsored by DRDO.}
-            \resumeItem{\textit{\textbf{Technologies used: } Databases: MongoDB, PostgreSQL, Apache Druid, EKL; Kafka}}
+            \resumeItem{Conducted a comparison of 4 different types of databases based on ingestion speed, data retrieval, and storage space utilization specific to IP-flow. Utilized the \textbf{nProbe} tool to generate network traffic, which was subsequently ingested into \textbf{Kafka}. Analyzed performance metrics across multiple databases, including \textbf{MongoDB}, \textbf{Elasticsearch}, \textbf{Apache Druid}, and \textbf{PostgreSQL}.}
           \resumeItemListEnd
       
       \resumeProjectHeading
         {\textbf{Empirical Analysis of P2P Protocols (Coursework Project)} $|$ \emph{\href{https://github.com/skjha98/P2P-Protocols-Comparision}{\color{blue}GitHub}}}{}
           \resumeItemListStart
-            \resumeItem{P2P protocols were compared based upon the hop-counts, lookup success rate, total lookups, etc.}
-            \resumeItem{Various protocols like Chord, Kademlia, Pastry were used for comparison.}
-            \resumeItem{\textit{\textbf{Technologies used: } OverSim P2P Simulator}}
+            \resumeItem{Conducted a comparative analysis of peer-to-peer (P2P) protocols based on key metrics such as hop counts, lookup success rate, and total lookups.}
+            \resumeItem{Evaluated various P2P protocols, including \textbf{Chord}, \textbf{Kademlia}, and \textbf{Pastry}, to assess their performance and efficiency in different scenarios. Used \textbf{Oversim P2P simulator} for running the simulations.}
           \resumeItemListEnd
       
     \resumeSubHeadingListEnd
@@ -289,10 +289,9 @@
   \vspace{2pt}
   \resumeSubHeadingListStart
     \small{\item{
-        \textbf{Programming:}{ C, C++, Python, SQL} \\
-        \textbf{Operating System:}{ Windows, Linux, Mac} \\
-        \textbf{Developer Tools}{: VS Code, Vim, Git, GitHub, Perforce, Trace32} \\
-        \textbf{Languages:}{ Hindi (Native), English (Professional)}
+        \textbf{Programming Languages:} C, C++, Python, SQL \\
+        \textbf{Technologies:}{ Hexagon SDK, Oracle DB, Informatica, Kafka} \\
+        \textbf{Developer Tools}{: VS Code, Vim, Git, GitHub, Perforce, Trace32}
     }}
   \resumeSubHeadingListEnd
 
